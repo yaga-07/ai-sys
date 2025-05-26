@@ -1,6 +1,6 @@
 class BaseVectorStore:
-    def add_documents(self, docs: list[str]):
+    def add_documents(self, docs: list):
         raise NotImplementedError
 
-    def similarity_search(self, query: str, k: int):
+    def similarity_search(self, query: list[float], k: int):
         raise NotImplementedError
